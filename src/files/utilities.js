@@ -5,6 +5,7 @@ export const initialData = JSON.parse(localStorage.getItem(key));
 export function saveData(data) {
   localStorage.setItem(key, JSON.stringify(data));
 }
+
 export function loadData() {
   return JSON.parse(localStorage.getItem(key)) || initialData;
 }

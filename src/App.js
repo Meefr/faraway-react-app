@@ -5,7 +5,9 @@ import Header from "./files/header";
 import TripInput from "./files/tripInput";
 import { initialData } from "./files/utilities";
 import TripList from "./files/tripList";
+import FooterBtns from "./files/footerBtns";
 function App() {
+  
   const [items, setItems] = useState(initialData || []);
 
   return (
@@ -13,9 +15,10 @@ function App() {
       <Header />
       <TripInput items={items} setItems={setItems} />
       <TripList items={items} setItems={setItems} />
-      <Footer
-        items={items}
-      />
+      <div className="fixed-bottom">
+        <FooterBtns items={items} setItems={setItems} />
+        <Footer items={items} />
+      </div>
     </>
   );
 }

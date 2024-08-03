@@ -2,18 +2,17 @@ export default function Footer({items}){
     const calcPackedItems = () => {
       let count = 0;
       items.forEach((item) => {
-        if (item.status) count++;
+        if (item.state) count++;
       });
-      console.log(count);
       return count;
     };
     return (
       <>
-        <div className="fixed-bottom text-center py-3 bg-rare">
+        <div className="text-center py-3 bg-rare">
           {items.length > 0 ? (
             <p className="m-0">
               You have {items.length} &#128188; on your list, and you already
-              packed {calcPackedItems()}{" "}
+              packed {calcPackedItems()}{" | "}
               {parseInt((calcPackedItems() / items.length) * 100)}%
             </p>
           ) : (

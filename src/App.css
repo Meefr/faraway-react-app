@@ -6,6 +6,10 @@
 }
 body{
   background-color: var(--second-color);
+  cursor: default;
+}
+.item-width p{
+  width: max-content;
 }
 .cursor-pointer{
   cursor: pointer;
@@ -33,6 +37,7 @@ body{
   background-color: var(--second-color);
   color: var(--main-color);
   transition: var(--transition);
+  cursor: pointer;
 }
 .custom-btn:hover{
   border: 1px solid var(--second-color);
