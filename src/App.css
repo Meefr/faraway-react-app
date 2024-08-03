@@ -7,6 +7,9 @@
 body{
   background-color: var(--second-color);
 }
+.cursor-pointer{
+  cursor: pointer;
+}
 .bg-rare{
   background-color: var(--rare-color);
 }

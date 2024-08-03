@@ -1,12 +1,20 @@
-export default function Footer({itemsNumber,packedItemsNumber}){
-    
+export default function Footer({items}){
+    const calcPackedItems = () => {
+      let count = 0;
+      items.forEach((item) => {
+        if (item.status) count++;
+      });
+      console.log(count);
+      return count;
+    };
     return (
       <>
         <div className="fixed-bottom text-center py-3 bg-rare">
-          {itemsNumber > 0 ? (
+          {items.length > 0 ? (
             <p className="m-0">
-              You have {itemsNumber} &#128188; on your list, and you already
-              packed {packedItemsNumber} {(packedItemsNumber / itemsNumber) * 100}%
+              You have {items.length} &#128188; on your list, and you already
+              packed {calcPackedItems()}{" "}
+              {parseInt((calcPackedItems() / items.length) * 100)}%
             </p>
           ) : (
             <p className="m-0">
