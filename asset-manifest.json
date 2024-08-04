@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/faraway-react-app/static/css/main.ea5344ca.css",
-    "main.js": "/faraway-react-app/static/js/main.48d672f1.js",
+    "main.js": "/faraway-react-app/static/js/main.6f4435b5.js",
     "index.html": "/faraway-react-app/index.html",
     "main.ea5344ca.css.map": "/faraway-react-app/static/css/main.ea5344ca.css.map",
-    "main.48d672f1.js.map": "/faraway-react-app/static/js/main.48d672f1.js.map"
+    "main.6f4435b5.js.map": "/faraway-react-app/static/js/main.6f4435b5.js.map"
   },
   "entrypoints": [
     "static/css/main.ea5344ca.css",
-    "static/js/main.48d672f1.js"
+    "static/js/main.6f4435b5.js"
   ]
 }
