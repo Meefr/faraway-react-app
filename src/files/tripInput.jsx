@@ -3,7 +3,7 @@ import { saveData } from "./utilities";
 
 export default function TripInput({ items, setItems }) {
   const [name, setName] = useState("");
-  const [amount, setAmount] = useState(0);
+  const [amount, setAmount] = useState(1);
   return (
     <>
       <div className="d-flex gap-4 align-items-center p-2 bg-main color-second justify-content-center">
@@ -48,7 +48,7 @@ export default function TripInput({ items, setItems }) {
               setItems(updatedItems);
               saveData(updatedItems);
               setName("");
-              setAmount(0);
+              setAmount(1);
             }
           }}
         >
